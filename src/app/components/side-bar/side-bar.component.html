@@ -1,0 +1,4 @@
+<div>
+  <app-search-box [(query)]="userQuery" (keydown.enter)="onEnterKeyPress($event)"></app-search-box>
+  <app-user-list [users]="userData" [(selectedUser)]="selectedUser"></app-user-list>
+</div>
